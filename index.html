@@ -2,6 +2,9 @@
 <html>
   <head>
     <style>
+      html{
+        min-height: 100%
+      }
       .avatar-image {
         width: 128px;
         height: 128px;
@@ -9,14 +12,30 @@
         border-radius: 128px;
       }
       body {
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1); /* made at https://learnui.design/tools/gradient-generator.html */
+        color: rgba(255,255,255,1.0);
+      }
+      a {
+        color: rgba(255,255,255,1.0);
       }
       .thumbnail{
-        width: 48px;
-        height: 48px;
-        border-radius: 48px;
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
         object-fit: cover;
+      }
+      .social-links{
+        margin-left: 30px
+      }
+      .main-container{
+        max-width: 640px;
+        margin: auto;
+      }
+      .item{
+        background-color: rgba(255,255,255,0.2);
       }
 
       
@@ -27,10 +46,10 @@
           <div class = "image-row">
             <img class = "avatar-image" src = "Upstate ny.jpg" alt = NY State Landscape>
           <div class = "name-row">
-            Upstate NY Vacation Rentals
+            <b>Upstate NY Vacation Rentals</b>
           <div class = "social-icons-row">
-            <a href="https://www.airbnb.com" target = "_blank"> Airbnb Home </a>
-            <a href="https://www.linkedin.com/in/thomas-tj-ball/" target = "_blank"> Host Contact</a>
+            <a class = "social-links" href="https://www.airbnb.com" target = "_blank"> Airbnb Home </a>
+            <a class = "social-links" href="https://www.linkedin.com/in/thomas-tj-ball/" target = "_blank"> Host Contact</a>
           </divsocial-icons-row>
           <div class = "links-row">
             <div class = "item">
